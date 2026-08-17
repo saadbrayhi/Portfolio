@@ -3,285 +3,253 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Saad's personal portfolio — computer science student and backend developer." />
-  <title>Saad | Portfolio</title>
+  <meta name="description" content="Saad Brayhi — backend-focused full-stack developer building reliable APIs, data-driven web products, and mobile experiences." />
+  <meta name="theme-color" content="#080a0f" />
+  <title>Saad Brayhi — Backend & Full-Stack Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="cursor-glow" aria-hidden="true"></div>
-  <div class="noise" aria-hidden="true"></div>
+  <div class="page-glow page-glow-a" aria-hidden="true"></div>
+  <div class="page-glow page-glow-b" aria-hidden="true"></div>
 
-  <header class="header">
-    <nav class="navbar container" aria-label="Main navigation">
-      <a class="logo" href="#home" aria-label="Go to homepage">S<span>.</span></a>
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Saad Brayhi home">
+        <span class="brand-mark">SB</span>
+        <span class="brand-copy"><strong>Saad Brayhi</strong><small>Backend / Full-Stack</small></span>
+      </a>
 
-      <button class="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false">
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
 
       <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
         <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="mailto:saadbrayhi123@gmail.com" class="nav-cta" aria-label="Contact Saad by email">Contact Me <span>↗</span></a>
       </div>
     </nav>
   </header>
 
-  <main>
-    <section class="hero section" id="home">
-      <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
-      <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
-      <div class="grid-lines" aria-hidden="true"></div>
-
-      <div class="container hero-layout">
-        <div class="hero-copy">
-          <p class="eyebrow reveal">Hello, I am</p>
-          <h1 class="hero-title reveal">
-            <span>Saad, a creative</span>
-            <span class="gradient-text">Backend Developer.</span>
-          </h1>
-          <p class="hero-description reveal">
-            I build reliable web applications, clean APIs, and practical digital experiences with a strong focus on performance and maintainability.
-          </p>
-
-          <div class="hero-actions reveal">
-            <a class="button button-primary magnetic" href="#projects">Explore my work</a>
-            <a class="button button-secondary" href="#contact">Contact me</a>
-          </div>
-
-          <div class="hero-meta reveal" aria-label="Quick facts">
-            <div><strong>02+</strong><span>Years learning</span></div>
-            <div><strong>06+</strong><span>Projects built</span></div>
-            <div><strong>100%</strong><span>Curiosity</span></div>
-          </div>
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy reveal">
+        <div class="availability"><span></span> Available for selected projects</div>
+        <p class="eyebrow">Backend-focused full-stack developer</p>
+        <h1>I build software that feels <em>reliable</em> from the API to the interface.</h1>
+        <p class="hero-lead">
+          I help turn product ideas into structured, maintainable web and mobile applications—combining robust backend engineering with clean frontend delivery.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#work">View selected work <span>↗</span></a>
+          <a class="btn btn-ghost" href="mailto:saadbrayhi123@gmail.com">Discuss a project</a>
         </div>
-
-        <div class="hero-visual reveal" aria-label="Animated developer illustration">
-          <div class="visual-card tilt-card">
-            <div class="visual-topbar">
-              <span></span><span></span><span></span>
-              <p>api.js</p>
-            </div>
-            <pre aria-label="Code example"><code><span class="code-purple">const</span> developer = {
-  name: <span class="code-green">"Saad"</span>,
-  focus: <span class="code-green">"Backend"</span>,
-  skills: [
-    <span class="code-green">"Node.js"</span>,
-    <span class="code-green">"Express"</span>,
-    <span class="code-green">"SQL"</span>
-  ],
-  status: <span class="code-blue">"Building"</span>
-};</code></pre>
-            <div class="status-pill"><span></span> Available for projects</div>
-          </div>
-          <div class="floating-tag tag-one">REST API</div>
-          <div class="floating-tag tag-two">Database</div>
-          <div class="floating-tag tag-three">Clean Code</div>
+        <div class="hero-proof" aria-label="Core capabilities">
+          <span>NestJS</span><span>PostgreSQL</span><span>Next.js</span><span>Angular</span><span>Ionic</span><span>TypeScript</span>
         </div>
       </div>
 
-      <a class="scroll-indicator" href="#about" aria-label="Scroll to About section">
-        <span></span>
-        Scroll
-      </a>
-    </section>
+      <div class="hero-stage reveal" aria-label="Backend system preview">
+        <div class="stage-orbit orbit-one"></div>
+        <div class="stage-orbit orbit-two"></div>
+        <article class="system-card">
+          <div class="system-top">
+            <div class="system-title"><span class="system-dot"></span> production-api</div>
+            <span class="system-live">healthy</span>
+          </div>
+          <div class="system-grid">
+            <div class="system-stat"><small>Architecture</small><strong>REST API</strong><span>modular services</span></div>
+            <div class="system-stat"><small>Database</small><strong>PostgreSQL</strong><span>relational model</span></div>
+            <div class="system-stat"><small>Validation</small><strong>DTO layer</strong><span>typed contracts</span></div>
+            <div class="system-stat"><small>Client</small><strong>Web + Mobile</strong><span>shared API flow</span></div>
+          </div>
+          <div class="code-window">
+            <div class="code-head"><span></span><span></span><span></span><b>users.service.ts</b></div>
+            <pre><code><i>@Injectable()</i>
+<span>export class</span> UsersService {
+  <span>async</span> findAll(query: UsersQueryDto) {
+    <span>return</span> this.repo.paginate(query);
+  }
 
-    <section class="section about" id="about">
-      <div class="container two-column">
-        <div class="section-heading reveal">
-          <p class="section-kicker">01 — About</p>
-          <h2>Turning ideas into useful digital products.</h2>
-        </div>
-
-        <div class="about-content reveal">
-          <p>
-            I am a computer science student who enjoys solving real problems through code. My main interest is backend development, where I design APIs, organize data, and connect the logic that powers modern web applications.
-          </p>
-          <p>
-            I value clear structure, continuous learning, and building projects that improve my technical judgment—not only my syntax.
-          </p>
-          <a class="text-link" href="#contact">Let us build something <span>↗</span></a>
-        </div>
+  <span>async</span> create(dto: CreateUserDto) {
+    <span>return</span> this.repo.create(dto);
+  }
+}</code></pre>
+          </div>
+          <div class="system-foot"><span><i></i> API ready</span><span>TypeScript</span><span>PostgreSQL</span></div>
+        </article>
+        <div class="floating-note note-a"><small>Focus</small><strong>Backend architecture</strong></div>
+        <div class="floating-note note-b"><small>Delivery</small><strong>Web + Mobile</strong></div>
       </div>
     </section>
 
-    <section class="section skills" id="skills">
-      <div class="container">
-        <div class="section-heading centered reveal">
-          <p class="section-kicker">02 — Skills</p>
-          <h2>Tools I use to build.</h2>
-          <p>A growing toolkit for creating structured, secure, and maintainable applications.</p>
-        </div>
-
-        <div class="skills-grid">
-          <article class="skill-card reveal tilt-card">
-            <span class="skill-number">01</span>
-            <div class="skill-icon">{ }</div>
-            <h3>Backend</h3>
-            <p>Node.js, Express.js, REST APIs, authentication, and server-side application logic.</p>
-          </article>
-
-          <article class="skill-card reveal tilt-card">
-            <span class="skill-number">02</span>
-            <div class="skill-icon">DB</div>
-            <h3>Databases</h3>
-            <p>SQL, MySQL, relational modeling, normalization, queries, and data organization.</p>
-          </article>
-
-          <article class="skill-card reveal tilt-card">
-            <span class="skill-number">03</span>
-            <div class="skill-icon">&lt;/&gt;</div>
-            <h3>Frontend</h3>
-            <p>HTML, CSS, JavaScript, responsive layouts, interactions, and accessible interfaces.</p>
-          </article>
-
-          <article class="skill-card reveal tilt-card">
-            <span class="skill-number">04</span>
-            <div class="skill-icon">Git</div>
-            <h3>Workflow</h3>
-            <p>Git, GitHub, debugging, API testing, problem solving, and iterative development.</p>
-          </article>
-        </div>
+    <section class="trust-strip">
+      <div class="shell trust-inner reveal">
+        <p>Built around production-minded fundamentals</p>
+        <div class="trust-items"><span>API design</span><i></i><span>Data modeling</span><i></i><span>Validation</span><i></i><span>Responsive UI</span><i></i><span>Git workflow</span></div>
       </div>
     </section>
 
-    <section class="section projects" id="projects">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="section-kicker">03 — Selected work</p>
-          <h2>Projects with purpose.</h2>
+    <section class="section shell" id="services">
+      <div class="section-intro reveal">
+        <p class="eyebrow">What I can deliver</p>
+        <h2>From backend logic to a product people can actually use.</h2>
+        <p>I focus on the parts that make software dependable: clear architecture, sound data flow, predictable APIs, and interfaces that stay connected to the real product logic.</p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card reveal">
+          <div class="service-num">01</div>
+          <div class="service-icon">API</div>
+          <h3>Backend & API Development</h3>
+          <p>Structured REST APIs, authentication flows, validation, pagination, filtering, error handling, documentation, and maintainable service architecture.</p>
+          <div class="service-tags"><span>NestJS</span><span>Node.js</span><span>Express</span><span>Swagger</span></div>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-num">02</div>
+          <div class="service-icon">DB</div>
+          <h3>Database-Driven Products</h3>
+          <p>Relational modeling and application data layers with clean entity relationships, migrations, ORM workflows, and practical query patterns.</p>
+          <div class="service-tags"><span>PostgreSQL</span><span>TypeORM</span><span>Prisma</span><span>Supabase</span></div>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-num">03</div>
+          <div class="service-icon">UI</div>
+          <h3>Full-Stack & Mobile Delivery</h3>
+          <p>Responsive web applications and mobile clients that connect cleanly to backend services, with thoughtful state, forms, validation, and API integration.</p>
+          <div class="service-tags"><span>Angular</span><span>Next.js</span><span>Ionic</span><span>Capacitor</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section work-section" id="work">
+      <div class="shell">
+        <div class="section-intro work-intro reveal">
+          <p class="eyebrow">Selected work</p>
+          <h2>Real projects. Clear responsibilities. No placeholder case studies.</h2>
+          <p>These projects show the range of systems I have built across full-stack web, backend APIs, databases, and mobile clients.</p>
         </div>
 
-        <div class="project-list">
-          <article class="project-card reveal">
-            <div class="project-visual project-visual-one">
-              <div class="mini-browser">
-                <div class="mini-browser-bar"><span></span><span></span><span></span></div>
-                <div class="dashboard-preview">
-                  <div class="preview-sidebar"></div>
-                  <div class="preview-main">
-                    <div class="preview-line short"></div>
-                    <div class="preview-cards"><i></i><i></i><i></i></div>
-                    <div class="preview-chart"></div>
-                  </div>
-                </div>
-              </div>
+        <div class="work-list">
+          <article class="case-study featured reveal">
+            <div class="case-media browser-frame">
+              <div class="browser-bar"><span></span><span></span><span></span><div>skilltrade</div></div>
+              <img src="assets/skilltrade-preview.jpg" alt="SkillTrade platform homepage" />
+              <div class="media-label">01 / Featured project</div>
             </div>
-            <div class="project-copy">
-              <div class="project-header">
-                <p>Web Application</p>
-                <span>2026</span>
-              </div>
-              <h3>Project Management API</h3>
-              <p>A structured backend for managing users, projects, tasks, permissions, and progress through a clean REST API.</p>
-              <div class="tags"><span>Node.js</span><span>Express</span><span>MySQL</span></div>
-              <a class="project-link" href="#contact" aria-label="Request details about Project Management API">View case study ↗</a>
-            </div>
-          </article>
-
-                    
-          <article class="project-card reverse reveal">
-            <div class="project-visual project-visual-two">
-              <div class="phone-preview">
-                <div class="phone-speaker"></div>
-
-                <div class="phone-content">
-                  <div class="avatar-circle"></div>
-                  <div class="preview-line"></div>
-                  <div class="preview-line short"></div>
-                  <div class="phone-card"></div>
-                  <div class="phone-card small"></div>
-                </div>
-              </div>
-            </div>
-
-            <div class="project-copy">
-              <div class="project-header">
-                <p>Full-Stack Web Application</p>
-                <span>2026</span>
-              </div>
-
+            <div class="case-copy">
+              <div class="case-meta"><span>Full-stack platform</span><span>2026</span></div>
               <h3>SkillTrade</h3>
-
-              <p>
-                A skill-exchange platform where users can share the skills they
-                offer, discover other users, and connect with people to exchange
-                knowledge and learn from each other.
-              </p>
-
-              <div class="tags">
-                <span>JavaScript</span>
-                <span>Node.js</span>
-                <span>Next.js</span>
-                <span>prisma</span>
-                <span>supabase</span>
+              <p class="case-lead">A skill-exchange product where users discover people, propose exchanges, manage interactions, and unlock premium access.</p>
+              <div class="case-details">
+                <div><small>What I worked on</small><p>Authentication, proposal workflows, premium access, user flows, database integration, and product features.</p></div>
+                <div><small>Engineering focus</small><p>Full-stack architecture, typed data flow, persistent user state, and maintainable application structure.</p></div>
               </div>
-
-              <a
-                class="project-link"
-                href="https://github.com/saadbrayhi/SkillTrade"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="View SkillTrade project on GitHub"
-              >
-                View project ↗
-              </a>
+              <div class="case-stack"><span>Next.js</span><span>TypeScript</span><span>Prisma</span><span>Supabase</span><span>PostgreSQL</span></div>
+              <a class="case-link" href="https://github.com/saadbrayhi/SkillTrade" target="_blank" rel="noopener noreferrer">Explore repository <span>↗</span></a>
             </div>
           </article>
 
-
-          <article class="project-card reveal">
-            <div class="project-visual project-visual-three">
-              <div class="terminal-preview">
-                <div class="terminal-bar"><span></span><span></span><span></span></div>
-                <p><b>$</b> npm run dev</p>
-                <p><em>✓</em> Database connected</p>
-                <p><em>✓</em> Server running on port 3000</p>
-                <p><span class="terminal-cursor"></span></p>
+          <article class="case-study reveal">
+            <div class="case-copy">
+              <div class="case-meta"><span>Web + REST API</span><span>2026</span></div>
+              <h3>User Management System</h3>
+              <p class="case-lead">A complete CRUD application with server-side pagination, sorting, search, validation, and a component-driven management interface.</p>
+              <div class="case-details">
+                <div><small>Backend</small><p>NestJS API, DTO validation, TypeORM entities, PostgreSQL, pagination, filtering, and error handling.</p></div>
+                <div><small>Frontend</small><p>Angular + PrimeNG interface with reactive forms, dialogs, tables, confirmation flows, and API integration.</p></div>
+              </div>
+              <div class="case-stack"><span>Angular</span><span>NestJS</span><span>PostgreSQL</span><span>TypeORM</span><span>PrimeNG</span></div>
+              <div class="case-actions">
+                <a class="case-link" href="https://github.com/saadbrayhi/user-crud-assignment" target="_blank" rel="noopener noreferrer">Repository <span>↗</span></a>
+                <a class="case-link muted-link" href="https://user-crud-assignment-zeta.vercel.app/" target="_blank" rel="noopener noreferrer">Live demo <span>↗</span></a>
               </div>
             </div>
-            <div class="project-copy">
-              <div class="project-header">
-                <p>Backend System</p>
-                <span>2025</span>
+            <div class="case-media dashboard-art" aria-label="User management dashboard illustration">
+              <div class="dash-shell">
+                <div class="dash-side"><div class="dash-logo"></div><span></span><span></span><span></span><span></span></div>
+                <div class="dash-main">
+                  <div class="dash-top"><div><b>User Management</b><small>Manage your users</small></div><button>+ Add user</button></div>
+                  <div class="dash-search"></div>
+                  <div class="dash-table"><div class="dash-row head"><span>Name</span><span>Email</span><span>Status</span></div><div class="dash-row"><span></span><span></span><span></span></div><div class="dash-row"><span></span><span></span><span></span></div><div class="dash-row"><span></span><span></span><span></span></div></div>
+                </div>
               </div>
-              <h3>Inventory Management Service</h3>
-              <p>A database-focused system for products, suppliers, stock movement, reports, and role-based operations.</p>
-              <div class="tags"><span>MySQL</span><span>REST</span><span>Git</span></div>
-              <a class="project-link" href="#contact" aria-label="Request details about Inventory Management Service">View case study ↗</a>
+              <div class="media-label">02 / Full-stack system</div>
             </div>
           </article>
+
+          <article class="case-study reveal">
+            <div class="case-media phone-art">
+              <div class="phone-shell"><div class="phone-notch"></div><img src="assets/users-mobile-preview.jpg" alt="Ionic users mobile application" /></div>
+              <div class="mobile-orbit"></div>
+              <div class="media-label">03 / Mobile client</div>
+            </div>
+            <div class="case-copy">
+              <div class="case-meta"><span>Mobile application</span><span>2026</span></div>
+              <h3>Users Mobile App</h3>
+              <p class="case-lead">A mobile client for the same user-management backend, designed to prove that one API can serve a clean web and native-style mobile experience.</p>
+              <div class="case-details">
+                <div><small>Product flow</small><p>Search, sorting, pagination, create, edit, delete, confirmation, and form validation.</p></div>
+                <div><small>Platform</small><p>Ionic + Angular with Capacitor, tested in browser, Android emulator, and a physical Android device.</p></div>
+              </div>
+              <div class="case-stack"><span>Ionic</span><span>Angular</span><span>TypeScript</span><span>Capacitor</span><span>SCSS</span></div>
+              <a class="case-link" href="https://github.com/saadbrayhi/userass-mobile-app" target="_blank" rel="noopener noreferrer">Explore repository <span>↗</span></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="more-work reveal">
+          <div><p class="eyebrow">More builds</p><h3>Additional product work</h3></div>
+          <div class="more-grid">
+            <a href="https://github.com/saadbrayhi/Pathly" target="_blank" rel="noopener noreferrer" class="more-card"><span>Study abroad platform</span><strong>Pathly</strong><p>Next.js platform for destinations, scholarships, admission guidance, documents, and visa flows.</p><b>Next.js · React · TypeScript <i>↗</i></b></a>
+            <a href="https://github.com/saadbrayhi/task-managment-api" target="_blank" rel="noopener noreferrer" class="more-card"><span>Full-stack CRUD</span><strong>Task Manager</strong><p>Responsive task workflow with PostgreSQL persistence, API validation, and CRUD operations.</p><b>React · Express · Prisma <i>↗</i></b></a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section contact" id="contact">
-      <div class="container contact-card reveal">
-        <div>
-          <p class="section-kicker">04 — Contact</p>
-          <h2>Have an idea?<br />Let us make it real.</h2>
+    <section class="section shell" id="about">
+      <div class="about-layout">
+        <div class="section-intro reveal">
+          <p class="eyebrow">About & approach</p>
+          <h2>I care about the system behind the screen.</h2>
         </div>
-        <div class="contact-details">
-          <p>I am open to internships, collaborations, and meaningful software projects.</p>
-          <a class="button button-primary magnetic" href="mailto:saadbrayhi123@gmail.com">saadbrayhi123@gmail.com</a>
-          <div class="social-links">
-            <a href="https://github.com/saadbrayhi" aria-label="GitHub profile">GitHub ↗</a>
-            <a href="https://www.linkedin.com/in/saad-brayhi-425784397" aria-label="LinkedIn profile">LinkedIn ↗</a>
-          </div>
+        <div class="about-copy reveal">
+          <p class="about-lead">I’m a Computer Science student specializing toward backend development, with practical experience building complete products across APIs, databases, web interfaces, and mobile clients.</p>
+          <p>I learn by shipping. My projects have pushed me through authentication, relational modeling, validation, server-side filtering and pagination, responsive interfaces, Android integration, deployment, Git workflows, and code review.</p>
+          <p>I prefer clear code, explicit data flow, and technology choices that fit the product instead of adding complexity for its own sake.</p>
+          <div class="about-links"><a href="https://github.com/saadbrayhi" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/saad-brayhi-425784397" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div>
+        </div>
+      </div>
+
+      <div class="experience-panel reveal">
+        <div class="exp-date">Dec 2025 — Jan 2026</div>
+        <div class="exp-body"><p>Full-Stack Developer Trainee</p><h3>TechTalks Academy</h3><span>Worked on SkillTrade using Next.js, TypeScript, Prisma, and Supabase, with hands-on exposure to authentication, product features, testing, GitHub collaboration, and Jira workflows.</span></div>
+        <div class="exp-tags"><span>Next.js</span><span>TypeScript</span><span>Prisma</span><span>Supabase</span><span>GitHub</span><span>Jira</span></div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="shell contact-panel reveal">
+        <div class="contact-copy">
+          <p class="eyebrow">Start a conversation</p>
+          <h2>Have a product to build, improve, or connect?</h2>
+          <p>For backend APIs, full-stack applications, or web/mobile integration, send me the problem you are trying to solve and the current state of the product.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="contact-email" href="mailto:saadbrayhi123@gmail.com"><small>Email me</small><strong>saadbrayhi123@gmail.com</strong><span>↗</span></a>
+          <div class="contact-social"><a href="https://github.com/saadbrayhi" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/saad-brayhi-425784397" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <p>© <span id="year"></span> Saad. Designed and coded with care.</p>
-      <a href="#home">Back to top ↑</a>
-    </div>
+    <div class="shell"><p>© <span id="year"></span> Saad Brayhi. Built with HTML, CSS & JavaScript.</p><a href="#top">Back to top ↑</a></div>
   </footer>
 
   <script src="script.js"></script>
