@@ -2,11 +2,15 @@
 
 A client-facing personal portfolio showcasing my work as a backend-focused full-stack developer.
 
+## Live Demo
+
+[View the live portfolio](https://saad-portfolio-2vt.pages.dev)
+
 ## Overview
 
 This portfolio presents selected projects, technical capabilities, and development experience across backend, web, and mobile applications.
 
-The site is intentionally built as a lightweight static portfolio for fast loading, simple maintenance, and easy deployment.
+It is built as a lightweight static website for fast loading, responsive performance, simple maintenance, and reliable deployment.
 
 ## Tech Stack
 
@@ -15,6 +19,7 @@ The site is intentionally built as a lightweight static portfolio for fast loadi
 * JavaScript
 * Responsive Design
 * Git & GitHub
+* Cloudflare Pages
 
 ## Featured Work
 
@@ -40,7 +45,7 @@ A full-stack task management application using React, Node.js, Express, Prisma, 
 
 ## Deployment
 
-This portfolio is deployed as a static website using Cloudflare Pages with GitHub integration.
+The portfolio is deployed with **Cloudflare Pages** and connected directly to the GitHub repository.
 
 ```text
 GitHub main branch
@@ -50,9 +55,11 @@ Cloudflare Pages
 Automatic production deployment
 ```
 
-Every push to `main` automatically triggers a new deployment.
+Every push to `main` automatically triggers a new production deployment.
 
 ## Local Development
+
+Clone the repository:
 
 ```bash
 git clone https://github.com/saadbrayhi/Portfolio.git
